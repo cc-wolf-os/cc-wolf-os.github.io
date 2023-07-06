@@ -1,0 +1,50 @@
+site_name: Wolf OS
+theme:
+  name: material
+  features:
+    - navigation.footer
+    - navigation.sections
+    - toc.integrate
+  icon:
+    admonition:
+      propane: material/propane-tank
+  palette:
+    scheme: slate
+    primary: custom
+    
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - tables
+  
+  
+plugins:
+  - mike:
+      # These fields are all optional; the defaults are as below...
+      alias_type: symlink
+      redirect_template: null
+      deploy_prefix: ''
+      canonical_version: null
+      version_selector: true
+      css_dir: css
+      javascript_dir: js
+
+extra_css:
+  - stylesheets/extra.css
+extra:
+  status:
+    new: Recently added
+    deprecated: deprecated
+  version:
+    provider: mike
+    default: stable
