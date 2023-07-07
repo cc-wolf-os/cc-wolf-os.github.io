@@ -1,0 +1,41 @@
+:root {
+    --md-admonition-icon--propane: url('https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/material/.icons/material/propane-tank.svg');
+    --md-admonition-icon--crate: url('https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/material/.icons/material/package-variant-closed.svg')
+  }
+  .md-typeset .admonition.propane,
+  .md-typeset details.propane {
+    border-color: rgb(83, 213, 223);
+  }
+  .md-typeset .propane > .admonition-title,
+  .md-typeset .propane > summary {
+    background-color: rgba(43, 155, 155, 0.1);
+  }
+  .md-typeset .propane > .admonition-title::before,
+  .md-typeset .propane > summary::before {
+    background-color: rgb(83, 213, 223);
+    -webkit-mask-image: var(--md-admonition-icon--propane);
+            mask-image: var(--md-admonition-icon--propane);
+  }
+  .md-typeset .admonition.crate,
+  .md-typeset details.crate {
+    border-color: rgb(199, 173, 117);
+  }
+  .md-typeset .crate > .admonition-title,
+  .md-typeset .crate > summary {
+    background-color: rgba(155, 103, 43, 0.1);
+  }
+  .md-typeset .crate > .admonition-title::before,
+  .md-typeset .crate > summary::before {
+    background-color: rgb(199, 173, 117);
+    -webkit-mask-image: var(--md-admonition-icon--crate);
+            mask-image: var(--md-admonition-icon--crate);
+  }
+  
+
+
+
+:root {
+    --md-primary-fg-color:        #D06018;
+    --md-primary-fg-color--light: #ecdbb7;
+    --md-primary-fg-color--dark:  #903703;
+  }

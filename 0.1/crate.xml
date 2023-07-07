@@ -1,0 +1,7 @@
+<crate version="0.0.1">
+    <folder name="exampleFolder">
+        <file name="example2.txt" content="example file in a folder" />
+    </folder>
+    <file name="example.txt" content="example file" />
+    <web name="tweaked.txt" url="https://example.tweaked.cc"/>
+</crate>
